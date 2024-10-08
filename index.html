@@ -82,7 +82,7 @@ function convertCurrency() {
     }
 
     if (fromCurrency === toCurrency) {
-        document.getElementById('result').innerText = `${amount} ${fromCurrency} = ${amount} ${toCurrency}`;
+        document.getElementById('result').innerText = "result"  + result;
         return;
     }
 
@@ -90,7 +90,8 @@ function convertCurrency() {
     let toRate = exchangeRates[toCurrency];
     let result = (amount / fromRate) * toRate;
 
-    document.getElementById('result').innerText = `${amount} ${fromCurrency} = ${result.toFixed(2)} ${toCurrency}`;
+    // document.getElementById('result').innerText = "result"  + result;
+    alert( "result" + "  " + result )
 }
 
     </script>
